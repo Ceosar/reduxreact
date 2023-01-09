@@ -1,0 +1,9 @@
+.content{
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+
+  grid-area: c;
+  background-color: rgb(6, 22, 50);
+  color: white;
+}

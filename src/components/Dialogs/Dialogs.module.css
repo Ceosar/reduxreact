@@ -1,0 +1,36 @@
+.dialogs{
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+}
+
+.users{
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+.messages{
+    max-width: 100%;
+}
+
+.submitMessage{
+    display: flex;
+    justify-content: center;
+}
+
+.submitMessage textarea{
+    width: 320px;
+    height: 40px;
+}
+
+.submitMessage button{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background-color: cornflowerblue;
+}
+
+.submitMessage button:hover{
+    background-color: grey;
+    color: black;
+    transition: all .4s;
+}

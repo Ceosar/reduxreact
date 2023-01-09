@@ -1,0 +1,22 @@
+.person{
+    margin-left: 25px;
+    padding: 20px;
+
+    display: flex;
+
+    font-size: 21px;
+}
+
+.person a{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 10px;
+}
+
+.person_logo{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}

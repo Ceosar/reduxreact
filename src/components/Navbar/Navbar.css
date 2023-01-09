@@ -1,0 +1,25 @@
+.nav{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+
+  gap: 10px;
+  padding: 10px 20px;
+
+  color: white;
+  background-color: rgb(53, 66, 87);
+  border-radius: 5px;
+
+  font-family: 'Poppins', sans-serif;
+  font-size: 21px;
+
+  grid-area: n;
+}
+
+.item{
+  color: white;
+}
+
+.active{
+  color: grey;
+}

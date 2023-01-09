@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;1,200&family=Ubuntu:ital@0;1&display=swap');
+
+/* font-family: 'Poppins', sans-serif; */
+
+body{
+  background-color: rgb(6, 22, 50);
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.app-wrapper{
+  max-width: 1200px;
+  margin: auto;
+
+  display: grid;
+
+  grid-template-areas:
+  "h h"
+  "n c";
+
+  grid-template-rows: 70px 1fr;
+  grid-template-columns: 2fr 10fr;
+  grid-gap: 10px;
+  margin-top: 10px;
+}
