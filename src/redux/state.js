@@ -1,3 +1,7 @@
+let rerenderEntireTree = () => {
+    console.log("Rerender started");
+}
+
 let state = {
     profilePage: {
         posts: [
@@ -34,6 +38,12 @@ export let addPost = (addPost) => {
     };
 
     state.profilePage.posts.push(newPost);
+    state.profilePage.newPostText = '';
+    rerenderEntireTree(state);
+}
+
+export const subscribe = (observer) => {
+
 }
 
 export default state;

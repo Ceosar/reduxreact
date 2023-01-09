@@ -11,7 +11,7 @@ import Music from './components/Music/Music';
 
 
 
-function App(props) {
+const App = (props) => {
   return (
       <div className='app-wrapper'>
         <Header />
