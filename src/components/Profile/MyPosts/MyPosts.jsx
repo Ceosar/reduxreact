@@ -9,14 +9,14 @@ const MyPosts = (props) => {
     let newPostElement = React.createRef();
 
     let addPost = () => {
-        let text = newPostElement.current.value;
-        props.addPost(text)
-        props.updateNewPostText("");
+        let action = {type:"ADD-POST"};
+        props.dispatch(action);
     }
 
     let onPostChange = () => {
         let text = newPostElement.current.value;
-        props.updateNewPostText(text);
+        let action = {type:"UPDATE-NEW-POST-TEXT", newText:text};
+        props.dispatch(action);
     }
 
     return (
@@ -38,3 +38,14 @@ const MyPosts = (props) => {
 }
 
 export default MyPosts;
+
+// let addPost = () => {
+//     let text = newPostElement.current.value;
+//     props.addPost(text)
+//     props.updateNewPostText("");
+// }
+
+// let onPostChange = () => {
+//     let text = newPostElement.current.value;
+//     props.updateNewPostText(text);
+// }
